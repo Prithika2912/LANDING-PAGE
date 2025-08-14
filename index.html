@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>City Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Wishdom Corner</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#events">Events</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Welcome to the City Library</h1>
+  <p>Explore books, join events, and discover knowledge at your community library.</p>
+  <button onclick="scrollToSection('services')">Discover More</button>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>
+   Established in 2015, my library has been serving readers and learners for over 10 years. Inspired by the world’s great libraries, it holds a curated collection of over 1,500 books, journals, and digital resources. The library features a comfortable reading space, a digital catalog for easy searching, and a dedicated section for rare and special editions. Over the years, it has grown into a quiet hub for study, creativity, and lifelong learning."
+  </p>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Book Lending</h3>
+      <p>Borrow from thousands of books across genres and languages.</p>
+    </div>
+    <div class="card">
+      <h3>Reading Rooms</h3>
+      <p>Quiet, comfortable spaces for reading, studying, and research.</p>
+    </div>
+    <div class="card">
+      <h3>Digital Library</h3>
+      <p>Access e-books, audiobooks, and online resources anytime.</p>
+    </div>
+  </div>
+</section>
+
+<section id="events">
+  <h2>Upcoming Events</h2>
+  <div class="events">
+    <div class="card">
+      <h3>Book Club</h3>
+      <p>Every Friday at 5 PM — Join discussions on our monthly pick.</p>
+    </div>
+    <div class="card">
+      <h3>Story Time</h3>
+      <p>Saturday mornings for children ages 4-8, with fun activities.</p>
+    </div>
+    <div class="card">
+      <h3>Author Talks</h3>
+      <p>Meet your favorite authors and learn about their writing process.</p>
+    </div>
+  </div>
+
+  <!-- Registration Form -->
+  <div class="registration">
+    <h3>Register for an Event</h3>
+    <form id="eventForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <select id="event" required>
+        <option value="">Select Event</option>
+        <option value="Book Club">Book Club</option>
+        <option value="Story Time">Story Time</option>
+        <option value="Author Talks">Author Talks</option>
+      </select>
+      <button type="submit">Register</button>
+    </form>
+    <p id="formMessage"></p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-info">
+    <p>Email: info@wishdomcorner.com</p>
+    <p>Phone: 123-345-7827</p>
+    <p>Address: knowledge Corner Library
+123 Book Street, Central City,
+Chennai, Tamil Nadu – 600001, India
+</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 City Library | Designed with ❤️</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
